@@ -110,7 +110,7 @@ The optional `hw-metrics.py` script provides system metrics via a simple HTTP en
 
 ```bash
 # Install dependencies
-pip install flask psutil
+pip install flask psutil flask_cors
 
 # For NVIDIA GPU metrics (optional)
 pip install gputil
