@@ -46,7 +46,7 @@ def get_gpu_info():
             'vram_total': values[8],
             'vram_free': values[9]
         }
-    except (FileNotFoundError, subprocess.TimeoutExpired):
+    except (FileNotFoundError, subprocess.TimeoutExpired, PermissionError):
         return None
 
 def get_cpu_info():
